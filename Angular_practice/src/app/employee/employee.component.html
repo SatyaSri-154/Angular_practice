@@ -1,0 +1,27 @@
+<h1> This is a Employee Component</h1>
+<button class="btn btn-primary" (click)="enableEmployeeFlag()">Display Employee data</button>
+
+<div *ngIf="bDisplayEmployeeData==true">
+  <br/>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <th>Employee ID</th>
+      <th>Employee name</th>
+      <th>Department</th>
+      <th>Designation</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employeeLst">
+       <td>{{emp.employee_id}}</td> 
+       <td>{{emp.ename}}</td>
+       <td>{{emp.dept}}</td>
+       <td>{{emp.designation}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br/>
+<br/>
+
+<img src="emp1.jpg">
+<img src="emp2.jpg">

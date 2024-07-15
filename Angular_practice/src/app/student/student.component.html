@@ -1,0 +1,24 @@
+<h1>This is a Student page</h1>
+<button class="btn btn-primary" (click)="enableStudentFlag()">Student data</button>
+
+<div *ngIf="bDisplayStudentData==true">
+  <br/>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <th>Student ID</th>
+      <th>Student_name</th>
+      <th>Stream</th>
+      <th>Marks</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentLst">
+       <td>{{student.student_id}}</td> 
+       <td>{{student.name}}</td>
+       <td>{{student.Stream}}</td>
+       <td>{{student.marks}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br/>
+<img src="student.jpg"/>

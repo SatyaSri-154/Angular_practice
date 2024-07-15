@@ -1,0 +1,26 @@
+<h1>This is a product page</h1>
+<button class="btn btn-primary" (click)="enableLaptopFlag()">Laptop data</button>
+
+<div *ngIf="bDisplayLaptopData==true">
+  <br/>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <th>Laptop ID</th>
+      <th>Laptop name</th>
+      <th>Description</th>
+      <th>Cost</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let laptop of laptopLst">
+       <td>{{laptop.product_id}}</td> 
+       <td>{{laptop.name}}</td>
+       <td>{{laptop.description}}</td>
+       <td>{{laptop.cost}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<br/>
+<img src="laptop.jpg"/>
+
+

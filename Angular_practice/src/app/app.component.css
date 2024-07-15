@@ -1,0 +1,40 @@
+h1{
+    font-family:'Times New Roman', Times, serif;
+    font-style: normal;
+    font-size: 40px;
+    color: #222020;
+    background-color: rgb(226, 223, 225);
+    text-align:center;
+
+    
+}
+button{
+    margin-left: 5px;
+    margin-top: 5px;
+}
+img{
+    border-image-width: 10px;
+  
+    height: 300px;
+    width: 400px;
+   
+
+
+}
+
+div{
+    background-color: aliceblue;
+    margin-top: 20px;
+    display: block;
+    text-align: initial;
+}
+.login{
+    margin-left:300px;
+    margin-top:10px;
+    border:2px solid gray;
+    width:50%;
+}
+h2{
+   color:green;
+   font-size:70px;
+}

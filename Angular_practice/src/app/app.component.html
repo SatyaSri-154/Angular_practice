@@ -1,0 +1,436 @@
+<!---<h1>Hello , Two way data binding</h1>
+Enter data here : <input type="text" [(ngModel)]="myName"/>
+
+<p>Given name is : {{myName}}</p>-->
+
+<!---<h1>Event binding.....</h1>
+<button class="btn btn-primary" (click)="buttonCliked()">Click</button>--->
+
+<!--<h1> Property binding...</h1>
+
+Enter Image Name : <input type="text" [(ngModel)] ="imgSrc" /> <br/><br/>
+
+<img [src]="imgSrc" height="600px" width="1400px"/>-->
+
+<!--<h1>Event binding....</h1>
+<button class="btn btn-primary" (click)="buttonClicked()">click</button>-->
+
+<!--<h1>Input validation using Event binding....</h1>
+
+Enter your ID:<input type="text" [(ngModel)]="userID"/><br/><br/>
+
+<button class="btn btn-warning" (click)="verifydata()">Verifyname</button>-->
+
+<!--
+<h1>ngIf Directive....</h1>
+<button class="btn btn-danger" (click)="enableFlag()"> LOGIN </button>
+
+<div *ngIf="bDisplayLoginForm==true">
+ <h2> Login Form </h2> 
+ Userid: <input type="text" [(ngModel)]="UID"/><br/><br/>
+ Password:<input type="text"/> <br/><br/>
+ <button type="submit" (click)="validate()">Login</button>
+</div>-->
+
+<!--<h1>Directive -ngFor</h1>
+<button class="btn btn-primary" (click)="enableProductDisplayFlag()">Display product data</button>
+
+<div *ngIf="bDisplayProductData==true">
+  <br/>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <th>Product ID</th>
+      <th>Product name</th>
+      <th>Description</th>
+      <th>Cost</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let product of ProductList">
+       <td>{{product.product_id}}</td> 
+       <td>{{product.product_name}}</td>
+       <td>{{product.description}}</td>
+       <td>{{product.cost}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>-->
+
+<!--<h1> Pipes..</h1>
+
+Enter text: <input type="text" [(ngModel)]="strText"/><br/><br/>
+
+<p>Given text: {{strText}} </p>
+
+<p>Upper case: {{strText | uppercase }} </p>
+<p>Lower case: {{strText | lowercase }} </p>-->
+
+
+<!--<h1>Currency Pipe..</h1>
+
+Enter amount:<input type="number" [(ngModel)]="nCurrency"/><br/><br/>
+
+<p>Given amount: {{nCurrency}} </p>
+
+<p> Currency in USD: {{nCurrency| currency :'USD'}}</p>
+<P>Currency in Rupees: {{nCurrency|currency: 'INR'}}</P>-->
+
+<!--<h1> Date pipe..</h1>
+
+<p>Given date is: {{todaysDate}} </p>
+<p>Short date: {{todaysDate|date: 'short' }}</p>
+<p>Medium date: {{todaysDate|date: 'medium' }}</p>
+<p>Long date: {{todaysDate|date: 'long' }}</p>-->
+
+<!--<h1> <b>Mutliple images....</b></h1>
+<img class="together" src="d.jpg" alt=""/>
+<img class="together" src="e.jpg" alt=""/>
+<img class="together" src="f.jpg" alt=""/>-->
+
+
+<!--<div>
+  <h1>Sum Function</h1><br/>
+
+Enter First number : <input type="number" [(ngModel)]="n1"><br/><br/>
+
+Enter second number: <input type="number" [(ngModel)]="n2"><br/><br/>
+
+
+<br/><button class="btn btn-info" (click)="Add()">Add</button><br/>
+
+
+</div>-->
+
+<!--<h1>Assignment 5</h1>
+<button class="btn btn-danger" (click)="enableFlag()"> LOGIN </button>
+
+<div *ngIf="bDisplayLoginForm==true">
+ <h2> Login Form </h2> 
+ Userid: <input type="text" [(ngModel)]="UID"/><br/><br/>
+ Password:<input type="text" [(ngModel)]="pwd" /> <br/><br/>
+ <button type="submit" (click)="validate()">Login</button>
+</div>-->
+
+<!--<h1>Assignment 6</h1>
+<button class="btn btn-danger" (click)="enableFlag()"> LOGIN </button>
+<button class="btn btn-primary" (click)="enableRegisterFlag()">Register</button>
+
+<div *ngIf="bDisplayLoginForm==true">
+ <h2> Login Form </h2> 
+ Userid: <input type="text" [(ngModel)]="UID" placeholder="Username"/><br/><br/>
+ Password:<input type="password" [(ngModel)]="pwd" placeholder="password"/> <br/><br/>
+ <button type="submit" (click)="validate()">Login</button>
+</div>
+
+<div *ngIf="bDisplayRegistrationForm==true">
+  <h2> Register Form </h2> 
+  Userid: <input type="text" [(ngModel)]="UserID" placeholder="enter username"/><br/><br/>
+  Password:<input type="password" [(ngModel)]="password" placeholder="password" /> <br/><br/>
+  Confirm Password:<input type="text" [(ngModel)]="confirmpwd" placeholder="confirm password"/> <br/><br/>
+  Email id:<input type="text" [(ngModel)]="emailid" placeholder="email id" /> <br/><br/>
+  <button type="submit" (click)="Register()">Register</button>
+ </div>-->
+
+
+<!--<h1>Assignment 7</h1>
+<button class="btn btn-primary" (click)="enableemployeeDisplayFlag()">Display Employee data</button>
+
+<div *ngIf="bDisplayemployeeData==true">
+  <br/>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <th>Employee ID</th>
+      <th>Employee name</th>
+      <th>Department</th>
+      <th>Designation</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of Employeelist">
+       <td>{{emp.employee_id}}</td> 
+       <td>{{emp.ename}}</td>
+       <td>{{emp.dept}}</td>
+       <td>{{emp.designation}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>-->
+
+<!--<h1>Angular services...</h1>
+<button class="btn btn-primary" (click)="enableemployeeDisplayFlag()">Display Employee data</button>
+
+<div *ngIf="bDisplayemployeeData==true">
+  <br/>
+  <table class="table table-hover table-bordered">
+    <thead>
+      <th>Employee ID</th>
+      <th>Employee name</th>
+      <th>Department</th>
+      <th>Designation</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of Employeelist">
+       <td>{{emp.employee_id}}</td> 
+       <td>{{emp.ename}}</td>
+       <td>{{emp.dept}}</td>
+       <td>{{emp.designation}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>-->
+
+<!--FORMS-->
+
+<!--<h1>Template Driven Forms</h1>
+<div class="container login">
+  <h2>Login Form </h2>-->
+  
+  <!--loginform is the name of this form.
+  (ngSubmit)="onSubmit(loginForm)--on click of submit button call a function named onSubmit 
+  and for that function send loginForm (current form) as the argument.-->
+  
+ <!---<form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">-->
+  <!--
+  class="form-group" --grouping of html controls label and textbox.
+  -->
+  <!--<div class="form-group">
+  <label for="username">User name :</label>  to display the username-->
+  
+  <!-- class="form-control"--used to style the form element..
+  name="username"--- username will be name given to this edit box and will be used in the ts file
+  ngModel -- to share this fields data in the ts file.
+  -->
+  <!--<input type="text" id="username" class="form-control" name="username" ngModel>
+  </div>
+  <div class="form-group">
+  <label for="password">password: </label><!--to display the password-->
+  <!--<input type="text" id="password" class="form-control" name="password" ngModel>
+  </div>
+  
+  <br/>
+  <button type="submit" class="btn btn-primary">Login</button>
+  <br/>
+  <br/>
+  </form>
+  </div>-->
+
+  <!--Forms-->
+
+
+<!--<nav class="navbar navbar-dark bg-dark mb-5">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li class="nav-items">
+          <a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a>
+        </li>
+
+        <li class="nav-items">
+          <a class="nav-link" routerLinkActive="active" routerLink="/product">Product</a>
+        </li>
+
+        <li class="nav-items">
+          <a class="nav-link" routerLinkActive="active" routerLink="/student">Student</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>-->
+
+<!--<nav class="navbar navbar-dark bg-dark mb-5">
+    <div class="container">
+      <ul class="nav nav-pills">
+
+        <li class="nav-items">
+          <a class="nav-link" routerLinkActive="active" routerLink="/student">Student</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+<router-outlet></router-outlet>-->
+
+
+
+<!--FORMS-->
+<!--
+<h1>Template Driven Forms</h1>
+<div class="container login">
+  <h2>Registartion_Form </h2>
+ <form #registerForm="ngForm" (ngSubmit)="onSubmission(registerForm)">
+  <div class="form-group">
+  <label for="username">User name :</label>  
+  <input type="text" id="username" class="form-control" name="username" ngModel>
+  </div>
+  <div class="form-group">
+  <label for="password">password: </label>
+  <input type="text" id="password" class="form-control" name="password" ngModel>
+  </div>
+  <div class="form-group">
+    <label for="confirmpassword">confirmpassword: </label>
+    <input type="text" id="confirmpassword" class="form-control" name="confirmpassword" ngModel>
+    </div>
+    <div class="form-group">
+      <label for="address">Address: </label>
+      <input type="text" id="address" class="form-control" name="address" ngModel>
+      </div>
+      <div class="form-group">
+        <label for="email">Emailid: </label>
+        <input type="text" id="email" class="form-control" name="email" ngModel>
+        </div>
+  <br/>
+  <button type="submit" class="btn btn-primary">Registration</button>
+  <br/>
+  <br/>
+  </form>
+  </div>
+-->
+
+  <!--Forms-->
+
+
+<!--<nav class="navbar navbar-dark bg-dark mb-5">
+    <div class="container">
+      <ul class="nav nav-pills">
+        <li class="nav-items">
+          <a class="nav-link" routerLinkActive="active" routerLink="/home">Home</a>
+        </li>
+
+        <li class="nav-items">
+          <a class="nav-link" routerLinkActive="active" routerLink="/product">Product</a>
+        </li>
+
+        <li class="nav-items">
+          <a class="nav-link" routerLinkActive="active" routerLink="/employee">Employee</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>-->
+
+
+<h1>connecting with backend server..</h1>  <br/><br/>
+<button class="btn btn-warning" (click)="getBookData()">Display Book data</button>
+<button class="btn btn-warning" (click)="addBookData()">Add Book data</button>
+<br/><br/>
+ 
+
+<table class="table table-hover table-bordered">
+    <thead>
+      <th>Book ID</th>
+      <th>Book name</th>
+      <th>Author</th>
+      <th>Cost</th>
+      <th>Action</th>
+    </thead>
+    <tbody>
+      <tr *ngFor="let book of bookLst">
+       <td>{{book.id}}</td> 
+       <td>{{book.title}}</td>
+       <td>{{book.author}}</td>
+       <td>{{book.cost}}</td>
+       <td>
+        <button class="btn btn-link" (click)="updateBook(book)">Edit</button>
+        <button class="btn btn-link" (click)="deleteBook(book.id)">Delete</button>
+       </td>
+      </tr>
+    </tbody>
+  </table>
+<div *ngIf="bDisplayAddData==true || bDisplayUpdateData==true">
+<h2>{{addOrUpdateDisplay}}</h2>
+Book Id : <input type="text" [(ngModel)]="book.id"><br/><br/>
+Title : <input type="text" [(ngModel)]="book.title"><br/><br/>
+Author : <input type="text" [(ngModel)]="book.author"><br/><br/>
+Cost : <input type="number" [(ngModel)]="book.cost"><br/><br/>
+
+<button class="btn btn-primary" (click)="createOrUpdateData()">Submit</button>
+
+</div>
+
+
+<!--FORMS Validation-->
+<!--<h1>Template Driven Forms Validation</h1>
+<div class="container login">
+  <h2>Registration Form</h2>
+  <form #registerForm="ngForm" (ngSubmit)="onSubmission(registerForm)">
+    <div class="form-group">
+      <label for="username">User name:</label>  
+      <input type="text" id="username" class="form-control" name="username" ngModel 
+      required minlength="3" #username="ngModel">
+      <div *ngIf="username.touched && username.invalid" class="alert alert-danger">
+        <div *ngIf="username.errors?.['required']">User name is required</div>
+        <div *ngIf="username.errors?.['minlength']">User name must be at least 3 characters</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="password">Password:</label>
+      <input type="password" id="password" class="form-control" name="password" ngModel 
+      required minlength="6" #password="ngModel">
+      <div *ngIf="password.touched && password.invalid" class="alert alert-danger">
+        <div *ngIf="password.errors?.['required']">Password cannot be blank</div>
+        <div *ngIf="password.errors?.['minlength']">Password must be minimum 6 characters</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="confirmpassword">Confirm Password:</label>
+      <input type="password" id="confirmpassword" class="form-control" name="confirmpassword" ngModel 
+      required #confirmpassword="ngModel">
+      <div *ngIf="confirmpassword.touched && confirmpassword.invalid" class="alert alert-danger">
+        <div *ngIf="confirmpassword.errors?.['required']">Confirm Password is required</div>
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="address">Address:</label>
+      <input type="text" id="address" class="form-control" name="address" ngModel>
+    </div>
+
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="emailid" id="emailid" class="form-control" name="emailid" ngModel emailid 
+      required #emailid="ngModel">
+    <div *ngIf="emailid.touched && emailid.invalid" class="alert alert-danger">
+    <div *ngIf="emailid.errors?.['required']">email is required</div>  
+    <div *ngIf="emailid.errors?.['email']">Invalid email format</div>  
+    </div>
+
+    <br/>
+    <button type="submit" class="btn btn-primary" [disabled]="registerForm.invalid">Register</button>
+    <br/><br/>
+</div>-->
+
+
+<!--<h1>Template Driven Forms</h1>
+<div class="container login">
+<h2>Login Form </h2>
+    
+  <form #loginForm="ngForm" (ngSubmit)="onSubmit(loginForm)">
+  
+   <div class="form-group">
+    <label for="username">User name :</label>
+    
+    
+<input type="text" id="username" class="form-control" name="username" ngModel required #username="ngModel">
+   <br/>
+   <div *ngIf="username.invalid && username.touched" class="alert alert-danger">
+  User name is required
+</div>
+    </div>
+    <div class="form-group">
+    <label for="password">password: </label>
+<input type="text" id="password" class="form-control" name="password" ngModel required #password="ngModel" minlength="6">
+<div *ngIf="password.invalid && password.touched" class="alert alert-danger">
+</div>  
+<div *ngIf="password.errors?.['required']">
+  password cannot be blank...
+</div>
+<div *ngIf="password.errors?.['minlength']">
+  Password must be minimum 6 characters
+</div>
+</div>
+    <br/>
+    <button type="submit" class="btn btn-primary" [disabled]="loginForm.invalid">Login</button>
+    <br/>
+    <br/>
+    </form>
+    </div>-->
